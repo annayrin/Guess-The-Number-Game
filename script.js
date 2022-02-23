@@ -47,9 +47,11 @@ function game() {
 guessButton.addEventListener("click", () => {
 
     game().then((resolve) => {
-     return text.innerHTML = resolve;
+      text.innerHTML = resolve;
     }).catch((reject) => {
-        return text.innerHTML = reject;
+        input.value = "";
+         text.innerHTML = reject;
+
     })
 })
 
