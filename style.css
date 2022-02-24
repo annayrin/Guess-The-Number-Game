@@ -53,7 +53,7 @@ body{
 
 .button{
     cursor: pointer;
-    border: 1px solid white;
+    border: 2px solid white;
     color: #ffffff;
     background:none;
     border-radius: 20px;
@@ -95,10 +95,8 @@ h1{
 
 
 @keyframes transform {
-    0%   {color: #ff00e6;}
-    25%  {color: #0800ff;}
-    50% {color: #ff0056;}
-    100% {color: #f8a100;}
+    0%   {color: #ffffff;}
+    100% {color: #ffffff;}
 }
 
 
