@@ -73,3 +73,18 @@ h1{
 .hidden{
     display:none;
 }
+
+.transform{
+    animation-name: transform;
+    animation-duration: 6s;
+    transition: 2s;
+}
+
+
+@keyframes transform {
+    0%   {color: #f01f08;}
+    15%  {color: #f19b0a;}
+    30%  {color: #e5f50b;}
+    50% {color: #f10a7e;}
+    100% {color: #ffffff;}
+}

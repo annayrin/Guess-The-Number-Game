@@ -66,4 +66,14 @@ function game() {
     })
 }
 
+ function transformer (){
+     header.classList.add("transform");
+ }
+ function unTransform(){
+     header.classList.remove("transform");
+ }
+
+header.addEventListener("mouseover",transformer);
+
+header.addEventListener("mouseout", unTransform);
 
