@@ -64,10 +64,12 @@ body{
 }
 
 .button:hover{
-    background-image: linear-gradient(#ffffff, #ffffff);
     transition-duration: 0.8s;
-    color: #000929;
+    color: #ffffff;
     transform: scale(1.1);
+    background: linear-gradient(90deg, #ff0000, #ff9400, #f9ff00, #50ff00, #00fdff, #0081ff, #4900ff, #ff00b2, #ff002b);
+    background-size: 1200% 1200%;
+    animation: Animation 5s cubic-bezier(0.26, 0.26, 1, 1) infinite;
 }
 
 h1{
@@ -106,3 +108,6 @@ h1{
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
+
+
+
