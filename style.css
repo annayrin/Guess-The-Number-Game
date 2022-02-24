@@ -30,7 +30,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 18px;
+    gap: 22px;
 }
 #text{
 
@@ -43,13 +43,14 @@ body{
 }
 
 #input{
-    border-radius: 20px;
+    border-radius:100%;
     border: 1px solid white;
-    height: 50px;
-    width: 170px;
+    height: 80px;
+    width: 80px;
     padding: 5px;
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
+    color: #000929;
 }
 
 .button{
