@@ -7,12 +7,13 @@ body{
 
 }
 .css-selector {
-    background: linear-gradient(270deg, #ff0000, #ff9400, #f9ff00, #50ff00, #00fdff, #0081ff, #4900ff, #ff00b2, #ff002b);
+    background: linear-gradient(270deg, #ff0000, #ff9400, #ffd500, #008c0c, #00fdff, #0081ff, #4900ff, #ff00b2, #ff002b);
     background-size: 1800% 1800%;
     animation: Animation 30s ease infinite;
 }
 
 #container{
+    box-shadow: rgb(255 255 255 / 87%) 0px -1px 20px 7px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -69,7 +70,7 @@ body{
     transform: scale(1.1);
     background: linear-gradient(90deg, #ff0000, #ff9400, #f9ff00, #50ff00, #00fdff, #0081ff, #4900ff, #ff00b2, #ff002b);
     background-size: 1200% 1200%;
-    animation: Animation 5s cubic-bezier(0.26, 0.26, 1, 1) infinite;
+    animation: Animation 10s cubic-bezier(0.26, 0.26, 1, 1) infinite;
 }
 
 h1{
