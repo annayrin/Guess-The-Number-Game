@@ -53,10 +53,13 @@ guessButton.addEventListener("click", () => {
          text.innerHTML = reject;
 
     })
+    restart.classList.remove("hidden");
 })
 
 
 restart.addEventListener("click", () => {
     input.value = "";
     text.innerHTML = "Guess the number from 1 up to 6.";
+    restart.classList.add("hidden");
 })
+
