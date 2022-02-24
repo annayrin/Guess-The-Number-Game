@@ -7,7 +7,9 @@ body{
 
 }
 .css-selector {
-    background: linear-gradient(270deg, #ff0000, #ff9400, #ffd500, #008c0c, #00fdff, #0081ff, #4900ff, #ff00b2, #ff002b);
+    background: linear-gradient(270deg, #ff5700, #ff9400, #ffd500,
+    #0080ff, #0b467e, #5e00ff, #1e0016, #ff002b,
+    #9a2f84, #c471ed, #f5e7e7);
     background-size: 1800% 1800%;
     animation: Animation 30s ease infinite;
 }
@@ -34,7 +36,7 @@ body{
 #text{
 
     color: #ffffff;
-    font-family: sans-serif;
+    font-family: monospace;
     font-size: x-large;
     max-width: 80%;
     text-align: center;
@@ -54,6 +56,7 @@ body{
 }
 
 .button{
+    font-family: monospace;
     cursor: pointer;
     border: 2px solid white;
     color: #ffffff;
@@ -70,18 +73,22 @@ body{
     color: #ffffff;
     font-size: 25px;
     transform: scale(1.1);
-    background: linear-gradient(270deg, #ff0000, #ff9400, #ffd500, #008c0c, #00fdff, #0081ff, #4900ff, #ff00b2, #ff002b);
+    background: linear-gradient(270deg, #ff0000, #ff9400, #ffd500,
+    #0b467e, #5e00ff, #1e0016, #ff002b,
+    #9a2f84, #c471ed, #f5e7e7);
     background-size: 1200% 1200%;
     animation: Animation 10s cubic-bezier(0.26, 0.26, 1, 1) infinite;
 }
 
 h1{
-
     max-width: 90%;
     margin-top: -7%;
     font-family: "Monoton", cursive;
     color: #ffffff;
     font-weight: lighter;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: rgb(203, 203, 203) 1px 7px 4px;
 }
 
 .hidden{
@@ -89,17 +96,9 @@ h1{
 }
 
 .transform{
-    animation: transform 30s ease infinite;
     transform:scale(1.15);
     transition: 2s;
 }
-
-
-@keyframes transform {
-    0%   {color: #ffffff;}
-    100% {color: #ffffff;}
-}
-
 
 
 @keyframes Animation {
