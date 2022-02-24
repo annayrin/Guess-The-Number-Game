@@ -42,14 +42,15 @@ body{
 }
 
 #input{
+    background: none;
     border-radius:100%;
-    border: 1px solid white;
+    border: 2px solid white;
     height: 70px;
     width: 70px;
     padding: 5px;
     text-align: center;
     font-size: 30px;
-    color: #000929;
+    color: #ffffff;
 }
 
 .button{
