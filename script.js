@@ -37,7 +37,7 @@ function game() {
             b:"Congratulations!!!"});
         } else if (+input.value++ === randomNumber || +input.value-- === randomNumber) {
             resolve({a:`The correct number was ${randomNumber}. You got 1 point.`,
-            b:`You're The Lucky One`});
+            b:`Lucky One`});
         } else {
             resolve({a:`You got 0 point. The correct number was ${randomNumber}.`,
             b:"Try Once More!"});
