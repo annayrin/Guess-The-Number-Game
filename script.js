@@ -9,6 +9,26 @@ let gameContainer = document.getElementById("gc");
 
 startButton.addEventListener("click", startTheGame);
 
+guessButton.addEventListener("click", () => {
+
+    game().then((resolve) => {
+        text.innerHTML = resolve.a;
+        header.innerHTML = resolve.b;
+    }).catch((reject) => {
+        input.value = "";
+        text.innerHTML = reject;
+    })
+    restart.classList.remove("hidden");
+})
+
+restart.addEventListener("click", () => {
+    input.value = "";
+    text.innerHTML = "Guess the number from 1 up to 6.";
+    header.innerHTML = "GUESS THE NUMBER";
+    restart.classList.add("hidden");
+})
+
+
 function startTheGame() {
     startButton.classList.add("hidden");
     gameContainer.classList.add("game-container");
@@ -46,24 +66,4 @@ function game() {
     })
 }
 
-
-guessButton.addEventListener("click", () => {
-
-    game().then((resolve) => {
-      text.innerHTML = resolve.a;
-      header.innerHTML = resolve.b;
-    }).catch((reject) => {
-         input.value = "";
-         text.innerHTML = reject;
-    })
-    restart.classList.remove("hidden");
-})
-
-
-restart.addEventListener("click", () => {
-    input.value = "";
-    text.innerHTML = "Guess the number from 1 up to 6.";
-    header.innerHTML = "GUESS THE NUMBER";
-    restart.classList.add("hidden");
-})
 
