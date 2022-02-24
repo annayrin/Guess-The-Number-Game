@@ -87,10 +87,8 @@ h1{
 
 .transform{
     animation: transform 30s ease infinite;
-    animation-name: transform;
-    animation-duration: 6s;
+    transform:scale(1.15);
     transition: 2s;
-    transform:scale(1.1);
 }
 
 
