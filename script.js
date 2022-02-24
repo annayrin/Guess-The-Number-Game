@@ -28,6 +28,9 @@ restart.addEventListener("click", () => {
     restart.classList.add("hidden");
 })
 
+header.addEventListener("mouseover",transformer);
+
+header.addEventListener("mouseout", unTransform);
 
 function startTheGame() {
     startButton.classList.add("hidden");
@@ -35,9 +38,6 @@ function startTheGame() {
     gameContainer.classList.remove("hidden");
 }
 
-function displayResult(res) {
-    text.innerHTML = res;
-}
 
 function random(max,min){
     return Math.floor(Math.random() * (max - min + 1) + min);
@@ -73,7 +73,5 @@ function game() {
      header.classList.remove("transform");
  }
 
-header.addEventListener("mouseover",transformer);
 
-header.addEventListener("mouseout", unTransform);
 
