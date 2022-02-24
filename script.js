@@ -4,7 +4,7 @@ let text = document.getElementById("text");
 let container = document.getElementById("container");
 let startButton = document.getElementById("startButton");
 let restart = document.getElementById("restart");
-
+let header = document.getElementById("header");
 
 //startButton.addEventListener("click", startTheGame);
 
@@ -33,11 +33,14 @@ function game() {
         if (Number(input.value) < 1 || Number(input.value) > 6 || isNaN(+input.value)) {
             reject("Please enter a number from 1 up to 6.");
         } else if (+input.value === randomNumber) {
-            resolve(`You have guessed the number. You got 2 points!`);
+            resolve({a:`You have guessed the number. You got 2 points!`,
+            b:"Congratulations!!!"});
         } else if (+input.value++ === randomNumber || +input.value-- === randomNumber) {
-            resolve(`The correct number was ${randomNumber}. You were so close, you got 1 point.`);
+            resolve({a:`The correct number was ${randomNumber}. You got 1 point.`,
+            b:`You're The Lucky One`});
         } else {
-            resolve(`You got 0 point. The correct number was ${randomNumber}.`);
+            resolve({a:`You got 0 point. The correct number was ${randomNumber}.`,
+            b:"Try Once More!"});
         }
 
     })
@@ -47,11 +50,11 @@ function game() {
 guessButton.addEventListener("click", () => {
 
     game().then((resolve) => {
-      text.innerHTML = resolve;
+      text.innerHTML = resolve.a;
+      header.innerHTML = resolve.b;
     }).catch((reject) => {
-        input.value = "";
+         input.value = "";
          text.innerHTML = reject;
-
     })
     restart.classList.remove("hidden");
 })
@@ -60,6 +63,7 @@ guessButton.addEventListener("click", () => {
 restart.addEventListener("click", () => {
     input.value = "";
     text.innerHTML = "Guess the number from 1 up to 6.";
+    header.innerHTML = "GUESS THE NUMBER";
     restart.classList.add("hidden");
 })
 
