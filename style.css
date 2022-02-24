@@ -9,9 +9,7 @@ body{
 .css-selector {
     background: linear-gradient(270deg, #ff0000, #ff9400, #f9ff00, #50ff00, #00fdff, #0081ff, #4900ff, #ff00b2, #ff002b);
     background-size: 1800% 1800%;
-    -webkit-animation: AnimationName 30s ease infinite;
-    -moz-animation: AnimationName 30s ease infinite;
-    animation: AnimationName 30s ease infinite;
+    animation: Animation 30s ease infinite;
 }
 
 #container{
@@ -86,6 +84,7 @@ h1{
 }
 
 .transform{
+    animation: transform 30s ease infinite;
     animation-name: transform;
     animation-duration: 6s;
     transition: 2s;
@@ -94,27 +93,15 @@ h1{
 
 
 @keyframes transform {
-    0%   {color: #f01f08;}
-    15%  {color: #f19b0a;}
-    30%  {color: #e5f50b;}
-    50% {color: #f10a7e;}
-    100% {color: #ffffff;}
+    0%   {color: #ff00e6;}
+    25%  {color: #0800ff;}
+    50% {color: #ff0056;}
+    100% {color: #f8a100;}
 }
 
 
 
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes AnimationName {
+@keyframes Animation {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
