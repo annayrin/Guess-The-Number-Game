@@ -17,7 +17,13 @@ body{
     width: 420px;
     background-image: radial-gradient(#00114d, #00114d);
 }
-
+.game-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 #text{
     color:#fcbf1e;
     font-family: sans-serif;

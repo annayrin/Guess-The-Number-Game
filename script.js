@@ -5,15 +5,15 @@ let container = document.getElementById("container");
 let startButton = document.getElementById("startButton");
 let restart = document.getElementById("restart");
 let header = document.getElementById("header");
+let gameContainer = document.getElementById("gc");
 
-//startButton.addEventListener("click", startTheGame);
+startButton.addEventListener("click", startTheGame);
 
-/*function startTheGame() {
-    container.innerHTML =
-  `<label id="text">Guess the number from 1 up to 6.</label>
-    <input id="input"/>
-    <button id="guessButton" class="button">Guess</button>`
-}*/
+function startTheGame() {
+    startButton.classList.add("hidden");
+    gameContainer.classList.add("game-container");
+    gameContainer.classList.remove("hidden");
+}
 
 function displayResult(res) {
     text.innerHTML = res;
