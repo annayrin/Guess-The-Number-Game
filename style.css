@@ -12,7 +12,7 @@ body{
     #0080ff, #0b467e, #5e00ff, #1e0016, #ff002b,
     #9a2f84, #c471ed, #f5e7e7);
     background-size: 1800% 1800%;
-    animation: Animation 30s ease infinite;
+    animation: Animation 40s cubic-bezier(0.24, 0.18, 0.64, 0.67) infinite;
 }
 
 #container{
