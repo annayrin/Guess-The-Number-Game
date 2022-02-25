@@ -54,7 +54,7 @@ function game() {
             reject("Please enter a number from 1 up to 6.");
         } else if (+input.value === randomNumber) {
             resolve({a:`You have guessed the number. You got 2 points!`,
-            b:"Congratulations!!!"});
+            b:"Congratulations!"});
         } else if (+input.value++ === randomNumber || +input.value-- === randomNumber) {
             resolve({a:`The correct number was ${randomNumber}. You got 1 point.`,
             b:`Lucky One`});

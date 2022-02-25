@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Monoton&family=Roboto:ital,wght@0,700;1,400&display=swap");
 body{
-    padding: 2vh;
+    margin: 0;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
