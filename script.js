@@ -7,6 +7,8 @@ let restart = document.getElementById("restart");
 let header = document.getElementById("header");
 let gameContainer = document.getElementById("gc");
 let points = document.getElementById("points");
+let reset = document.getElementById("reset");
+
 
 startButton.addEventListener("click", startTheGame);
 
@@ -36,6 +38,9 @@ header.addEventListener("mouseover",transformer);
 
 header.addEventListener("mouseout", unTransform);
 
+reset.addEventListener("click", ()=>{
+    return points.value = 0;
+})
 function startTheGame() {
     startButton.classList.add("hidden");
     gameContainer.classList.add("game-container");
@@ -61,11 +66,12 @@ function game() {
             resolve({a:`You have guessed the number. You got 2 points!`,
             b:"Congratulations!",
             c:2});
-        } else if (+input.value++ === randomNumber || +input.value-- === randomNumber) {
+        } else if (+input.value === randomNumber+1 || +input.value === randomNumber-1) {
             resolve({a:`The correct number was ${randomNumber}. You got 1 point.`,
             b:`Lucky One`,
             c:1});
-        } else {
+        }
+            else {
             resolve({a:`You got 0 point. The correct number was ${randomNumber}.`,
             b:"Try Once More!",
             c:0});
