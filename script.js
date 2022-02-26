@@ -46,7 +46,7 @@ reset.addEventListener("click", ()=>{
         document.getElementById("xspan2").classList.remove("span2");
     },1000)
 
-    return points.value = 0;
+    return setTimeout(()=>{points.value = 0;},1000);
 })
 function startTheGame() {
     startButton.classList.add("hidden");
