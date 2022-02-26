@@ -39,6 +39,13 @@ header.addEventListener("mouseover",transformer);
 header.addEventListener("mouseout", unTransform);
 
 reset.addEventListener("click", ()=>{
+    document.getElementById("xspan1").classList.add("span1");
+    document.getElementById("xspan2").classList.add("span2");
+    setTimeout(()=>{
+        document.getElementById("xspan1").classList.remove("span1");
+        document.getElementById("xspan2").classList.remove("span2");
+    },1000)
+
     return points.value = 0;
 })
 function startTheGame() {
