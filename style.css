@@ -16,6 +16,7 @@ body{
 }
 
 #container{
+    position: absolute;
     box-shadow: rgb(255 255 255 / 87%) 0px -1px 20px 7px;
     border-radius: 20px;
     display: flex;
@@ -108,5 +109,31 @@ h1{
     100%{background-position:0% 50%}
 }
 
+#popup{
+    position: absolute;
+    right: -190px;
+    box-shadow: rgb(255 255 255 / 87%) 0px -1px 20px 7px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    height: 200px;
+    width: 150px;
+    border: 4px solid white;
 
+}
+
+#points{
+    background: none;
+    border-radius:100%;
+    border: 2px solid white;
+    height: 70px;
+    width: 70px;
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+}
 

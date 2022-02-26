@@ -6,6 +6,7 @@ let startButton = document.getElementById("startButton");
 let restart = document.getElementById("restart");
 let header = document.getElementById("header");
 let gameContainer = document.getElementById("gc");
+let points = document.getElementById("points");
 
 startButton.addEventListener("click", startTheGame);
 
@@ -14,6 +15,7 @@ guessButton.addEventListener("click", () => {
     game().then((resolve) => {
         text.innerHTML = resolve.a;
         header.innerHTML = resolve.b;
+        points.value = +points.value + resolve.c;
     }).catch((reject) => {
         input.value = "";
         text.innerHTML = reject;
@@ -38,6 +40,7 @@ function startTheGame() {
     startButton.classList.add("hidden");
     gameContainer.classList.add("game-container");
     gameContainer.classList.remove("hidden");
+    points.value = 0;
 }
 
 
@@ -56,13 +59,16 @@ function game() {
             reject("Please enter a number from 1 up to 6.");
         } else if (+input.value === randomNumber) {
             resolve({a:`You have guessed the number. You got 2 points!`,
-            b:"Congratulations!"});
+            b:"Congratulations!",
+            c:2});
         } else if (+input.value++ === randomNumber || +input.value-- === randomNumber) {
             resolve({a:`The correct number was ${randomNumber}. You got 1 point.`,
-            b:`Lucky One`});
+            b:`Lucky One`,
+            c:1});
         } else {
             resolve({a:`You got 0 point. The correct number was ${randomNumber}.`,
-            b:"Try Once More!"});
+            b:"Try Once More!",
+            c:0});
         }
 
     })
