@@ -8,7 +8,8 @@ let header = document.getElementById("header");
 let gameContainer = document.getElementById("gc");
 let points = document.getElementById("points");
 let reset = document.getElementById("reset");
-
+let xspan1 = document.getElementById("xspan1");
+let xspan2 = document.getElementById("xspan2");
 
 startButton.addEventListener("click", startTheGame);
 
@@ -39,11 +40,11 @@ header.addEventListener("mouseover",transformer);
 header.addEventListener("mouseout", unTransform);
 
 reset.addEventListener("click", ()=>{
-    document.getElementById("xspan1").classList.add("span1");
-    document.getElementById("xspan2").classList.add("span2");
+    xspan1.classList.add("span1");
+    xspan2.classList.add("span2");
     setTimeout(()=>{
-        document.getElementById("xspan1").classList.remove("span1");
-        document.getElementById("xspan2").classList.remove("span2");
+        xspan1.classList.remove("span1");
+        xspan2.classList.remove("span2");
     },1000)
 
     return setTimeout(()=>{points.value = 0;},1000);

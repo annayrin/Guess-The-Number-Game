@@ -195,3 +195,10 @@ h3{
     display: block;
     transform: rotate(-45deg) translate(6px, 0);
 }
+
+#num3{
+    font-size: 30px;
+    color: white;
+    font-family:monospace ;
+}
+
