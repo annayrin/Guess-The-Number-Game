@@ -8,6 +8,7 @@ let header = document.getElementById("header");
 let gameContainer = document.getElementById("gc");
 let points = document.getElementById("points");
 let reset = document.getElementById("reset");
+let popup = document.getElementById("popup");
 let xspan1 = document.getElementById("xspan1");
 let xspan2 = document.getElementById("xspan2");
 
@@ -53,6 +54,7 @@ function startTheGame() {
     startButton.classList.add("hidden");
     gameContainer.classList.add("game-container");
     gameContainer.classList.remove("hidden");
+    popup.classList.add("popup");
     points.value = 0;
 }
 

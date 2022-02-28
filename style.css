@@ -109,7 +109,8 @@ h1{
     100%{background-position:0% 50%}
 }
 
-#popup{
+.popup{
+    transition: linear 5s;
     position: absolute;
     right: -190px;
     box-shadow: rgb(255 255 255 / 87%) 0px -1px 20px 7px;
