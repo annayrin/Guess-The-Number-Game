@@ -41,11 +41,13 @@ header.addEventListener("mouseover",transformer);
 header.addEventListener("mouseout", unTransform);
 
 reset.addEventListener("click", ()=>{
-    xspan1.classList.add("span1");
-    xspan2.classList.add("span2");
+    reset.classList.add("colorink");
+   // xspan1.classList.add("span1");
+   // xspan2.classList.add("span2");
     setTimeout(()=>{
-        xspan1.classList.remove("span1");
-        xspan2.classList.remove("span2");
+        reset.classList.remove("colorink");
+        //xspan1.classList.remove("span1");
+       // xspan2.classList.remove("span2");
     },1000)
 
     return setTimeout(()=>{points.value = 0;},1000);

@@ -146,7 +146,7 @@ h1{
     font-size: 30px;
     color: #ffffff;
 }
-#reset{
+.reset{
     margin-top: 60px;
     position: absolute;
     font-family: monospace;
@@ -208,5 +208,10 @@ h3{
     font-size: 30px;
     color: white;
     font-family:monospace ;
+}
+
+.colorink{
+    background-color: white;
+    transition: all .7s ease-out;
 }
 
