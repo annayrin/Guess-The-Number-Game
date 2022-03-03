@@ -91,10 +91,12 @@ function game() {
 }
 
  function transformer (){
+     header.classList.remove("untransform");
      header.classList.add("transform");
  }
  function unTransform(){
      header.classList.remove("transform");
+     header.classList.add("untransform");
  }
 
 
